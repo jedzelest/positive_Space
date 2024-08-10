@@ -1,0 +1,8 @@
+@import "./styles/variables";
+
+.body_style {
+  background-color: $primary_color;
+  height: 100vh;
+  overflow: auto;
+  position: relative;
+}
