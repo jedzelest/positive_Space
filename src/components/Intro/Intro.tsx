@@ -3,8 +3,8 @@ import styles from "./Intro.module.scss";
 
 interface Props {
   primary_image: string;
-  image_name_prop?: string;
   paragraph: string;
+  openingText: string;
   author: string;
   onButtonClick?: () => void;
   links: {
@@ -16,7 +16,7 @@ interface Props {
 
 const Intro = ({
   primary_image,
-  image_name_prop,
+  openingText,
   onButtonClick,
   paragraph,
   author,
@@ -26,10 +26,7 @@ const Intro = ({
     <header className={styles.intro_header}>
       <div className={styles.text_intro}>
         <h1 className={styles.heading_text}>
-          <span className={styles.typing_text}>Hi, I'm</span>
-          {image_name_prop && (
-            <img src="src/assets/jedzelest.png" alt="name-image" />
-          )}
+          <span className={styles.typing_text}>{openingText}</span>
         </h1>
         <p>
           {paragraph}

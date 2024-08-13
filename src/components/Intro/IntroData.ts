@@ -1,6 +1,5 @@
-const name_intro = "Jedzel Estrelloso";
 const primary_image = "src/assets/Jiezel_center.jpg";
-const image_name_prop = "src/assets/jedzelest.png";
+const openingText = "He has risen, Baby Girl!";
 const paragraph = `"Illustrations can be a big window: a looking glass into the author's
           imagination."`;
 const author = "Emma Lesley";
@@ -23,4 +22,4 @@ const links = [
   },
 ];
 
-export { name_intro, primary_image, image_name_prop, paragraph, author, links };
+export { primary_image, openingText, paragraph, author, links };

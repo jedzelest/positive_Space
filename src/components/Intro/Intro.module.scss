@@ -23,19 +23,19 @@
       font-size: 40px;
       font-weight: 700;
       display: flex;
+      color: #df4e4e;
       justify-content: center;
       align-items: center;
-      gap: 10px;
 
       .typing_text {
         overflow: hidden;
         border-right: 2px solid;
         white-space: nowrap;
-        animation: typing 3s steps(15, end) infinite,
-          blink-caret 0.75s step-end infinite;
+        transition: all ease-in-out;
+        animation: typing 3s steps(15, end), blink-caret 0.75s step-end infinite;
 
         span {
-          color: $accent_color;
+          color: $tertiary_color;
         }
       }
 
@@ -55,7 +55,7 @@
 
       span {
         display: block;
-        color: $accent_color;
+        color: $tertiary_color;
         font-weight: 500;
         font-style: italic;
       }
