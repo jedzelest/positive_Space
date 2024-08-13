@@ -2,7 +2,7 @@ import styles from "./Button.module.scss";
 
 interface Props {
   context: string;
-  onClick: () => void;
+  onClick?: () => void;
   type?: "button" | "submit" | "reset";
   disabled?: boolean;
   variant?: "primary" | "secondary" | "danger";

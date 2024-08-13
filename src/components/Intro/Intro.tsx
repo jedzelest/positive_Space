@@ -6,56 +6,58 @@ interface Props {
   image_name_prop?: string;
   paragraph: string;
   author: string;
+  onButtonClick?: () => void;
   links: {
     id: number;
+    redirect: string;
     image_link: string;
-  };
+  }[];
 }
 
-const Intro = () => {
-  const buttonClick = () => {
-    console.log("Button Clicked");
-  };
+const Intro = ({
+  primary_image,
+  image_name_prop,
+  onButtonClick,
+  paragraph,
+  author,
+  links,
+}: Props) => {
   return (
     <header className={styles.intro_header}>
       <div className={styles.text_intro}>
         <h1 className={styles.heading_text}>
-          Hi, I'm <img src="src/assets/jedzelest.png" alt="name-image" />
+          <span className={styles.typing_text}>Hi, I'm</span>
+          {image_name_prop && (
+            <img src="src/assets/jedzelest.png" alt="name-image" />
+          )}
         </h1>
         <p>
-          "Illustrations can be a big window: a looking glass into the author's
-          imagination."
-          <span className={styles.author_name}>by Emma Lesley</span>
+          {paragraph}
+          <span className={styles.author_name}>by {author}</span>
         </p>
 
         <Button
           context="Download CV"
-          onClick={buttonClick}
+          onClick={onButtonClick}
           icon="src/assets/download_CV.png"
         />
       </div>
       <div className={styles.image_intro}>
-        <img
-          src="src/assets/Black_WhiteJiezel.png"
-          alt="header-image"
-          className={styles.main_image}
-        />
+        <div className={styles.image_container}>
+          <img
+            src={primary_image}
+            alt="header-image"
+            className={styles.main_image}
+          />
+        </div>
         <ul>
-          <li>
-            <a href="#">
-              <img src="src/assets/artstation.png" alt="" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="src/assets/instagram.png" alt="" />
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="src/assets/linkedin.png" alt="" />
-            </a>
-          </li>
+          {links.map((link) => (
+            <li key={link.id}>
+              <a href={link.redirect} target="_blank">
+                <img src={link.image_link} alt="" />
+              </a>
+            </li>
+          ))}
         </ul>
       </div>
     </header>

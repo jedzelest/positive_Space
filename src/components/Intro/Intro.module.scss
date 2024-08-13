@@ -10,6 +10,8 @@
   max-width: 100%;
   padding: 0 245px;
 
+  // styles for the text-intro
+
   .text_intro {
     display: flex;
     flex-direction: column;
@@ -24,6 +26,18 @@
       justify-content: center;
       align-items: center;
       gap: 10px;
+
+      .typing_text {
+        overflow: hidden;
+        border-right: 2px solid;
+        white-space: nowrap;
+        animation: typing 3s steps(15, end) infinite,
+          blink-caret 0.75s step-end infinite;
+
+        span {
+          color: $accent_color;
+        }
+      }
 
       img {
         width: 216;
@@ -42,9 +56,13 @@
       span {
         display: block;
         color: $accent_color;
+        font-weight: 500;
+        font-style: italic;
       }
     }
   }
+
+  // styles for the image-intro
 
   .image_intro {
     display: flex;
@@ -54,12 +72,31 @@
     gap: 40px;
     width: 333px;
 
-    .main_image {
+    .image_container {
+      position: relative;
       height: 333px;
       width: 333px;
-      object-fit: cover;
-      border-radius: 100%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+        pointer-events: none;
+      }
+
+      .main_image {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 100%;
+      }
     }
+
     ul {
       list-style: none;
       display: flex;
@@ -72,5 +109,25 @@
         width: 40px;
       }
     }
+  }
+}
+
+// animation
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: $secondary_color;
   }
 }
