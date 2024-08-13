@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+
+.intro_header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 245px;
+
+  .text_intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 44px;
+
+    .heading_text {
+      font-size: 40px;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: 216;
+        height: 49px;
+      }
+    }
+    p {
+      width: 274px;
+      height: 100px;
+      display: flex;
+      font-size: 16px;
+      font-weight: 600;
+      flex-direction: column;
+      gap: 15px;
+
+      span {
+        display: block;
+        color: $accent_color;
+      }
+    }
+  }
+
+  .image_intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 333px;
+
+    .main_image {
+      height: 333px;
+      width: 333px;
+      object-fit: cover;
+      border-radius: 100%;
+    }
+    ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 24px;
+
+      a img {
+        height: 40px;
+        width: 40px;
+      }
+    }
+  }
+}
