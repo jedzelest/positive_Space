@@ -2,6 +2,7 @@ import style from "./App.module.scss";
 import Button from "./components/Button/Button";
 import Intro from "./components/Intro/Intro";
 import Navigation from "./components/Navigation/Navigation";
+import Services from "./components/Services/Services";
 import { navigationList } from "./components/Navigation/NavigationData";
 import { primary_image } from "./components/Intro/IntroData";
 import { openingText } from "./components/Intro/IntroData";
@@ -30,6 +31,7 @@ function App() {
           author={author}
           links={links}
         />
+        <Services />
       </div>
     </>
   );

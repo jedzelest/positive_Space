@@ -9,6 +9,7 @@
   width: 100%;
   max-width: 100%;
   padding: 0 245px;
+  margin: 2em 0;
 
   // styles for the text-intro
 
@@ -52,7 +53,7 @@
 
       span {
         display: block;
-        color: $tertiary_color;
+        color: $accent_color;
         font-weight: 500;
         font-style: italic;
       }
