@@ -31,12 +31,9 @@
         overflow: hidden;
         border-right: 2px solid;
         white-space: nowrap;
-        transition: all ease-in-out;
-        animation: typing 3s steps(15, end), blink-caret 0.75s step-end infinite;
-
-        span {
-          color: $tertiary_color;
-        }
+        display: inline;
+        animation: typing 4s steps(30, end) 1s infinite,
+          blink-caret 0.75s step-end infinite;
       }
 
       img {
@@ -114,11 +111,14 @@
 
 // animation
 @keyframes typing {
-  from {
-    width: 0;
+  0% {
+    width: 0; /* Starts with no text visible */
   }
-  to {
-    width: 100%;
+  70% {
+    width: 100%; /* Fully types the text by 70% of the animation time */
+  }
+  100% {
+    width: 100%; /* Holds the full text for the remaining 30% */
   }
 }
 

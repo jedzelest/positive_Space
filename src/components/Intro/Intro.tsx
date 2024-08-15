@@ -26,7 +26,7 @@ const Intro = ({
     <header className={styles.intro_header}>
       <div className={styles.text_intro}>
         <h1 className={styles.heading_text}>
-          <span className={styles.typing_text}>{openingText}</span>
+          <span className={styles.typing_text}>{openingText} </span>
         </h1>
         <p>
           {paragraph}
