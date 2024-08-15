@@ -9,39 +9,18 @@ interface Props {
   }[];
 }
 
-const Services = () => {
+const Services = ({ header, skillList }: Props) => {
   return (
     <div className={styles.services_style}>
-      <h3>Services</h3>
+      <h3>{header}</h3>
       <ul>
-        <li>
-          <img src="src/assets/controller.png" alt="" />
-          <h6>Game Illustration</h6>
-          <p>
-            Illustrations and digital drawings for video games and mobile games.
-          </p>
-        </li>
-        <li>
-          <img src="src/assets/controller.png" alt="" />
-          <h6>Game Illustration</h6>
-          <p>
-            Illustrations and digital drawings for video games and mobile games.
-          </p>
-        </li>
-        <li>
-          <img src="src/assets/controller.png" alt="" />
-          <h6>Game Illustration</h6>
-          <p>
-            Illustrations and digital drawings for video games and mobile games.
-          </p>
-        </li>
-        <li>
-          <img src="src/assets/controller.png" alt="" />
-          <h6>Game Illustration</h6>
-          <p>
-            Illustrations and digital drawings for video games and mobile games.
-          </p>
-        </li>
+        {skillList.map((skill) => (
+          <li key={skill.id}>
+            <img src={skill.imageIcon} alt="" />
+            <h6>{skill.skillText}</h6>
+            <p>{skill.description}</p>
+          </li>
+        ))}
       </ul>
     </div>
   );

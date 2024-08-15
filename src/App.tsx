@@ -9,6 +9,7 @@ import { openingText } from "./components/Intro/IntroData";
 import { paragraph } from "./components/Intro/IntroData";
 import { author } from "./components/Intro/IntroData";
 import { links } from "./components/Intro/IntroData";
+import { skillList } from "./components/Services/ServicesData";
 
 function App() {
   const imagePath = "src/assets/positiveSpace.png";
@@ -31,7 +32,7 @@ function App() {
           author={author}
           links={links}
         />
-        <Services />
+        <Services header="Services" skillList={skillList} />
       </div>
     </>
   );
