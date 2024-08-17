@@ -10,6 +10,7 @@ import { paragraph } from "./components/Intro/IntroData";
 import { author } from "./components/Intro/IntroData";
 import { links } from "./components/Intro/IntroData";
 import { skillList } from "./components/Services/ServicesData";
+import FixedNav from "./components/FixedNav/FixedNav";
 
 function App() {
   const imagePath = "src/assets/positiveSpace.png";
@@ -33,6 +34,11 @@ function App() {
           links={links}
         />
         <Services header="Services" skillList={skillList} />
+        <FixedNav
+          first_option="Gallery"
+          second_option="About"
+          third_option="Reviews"
+        />
       </div>
     </>
   );

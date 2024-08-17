@@ -1,0 +1,49 @@
+@import "../../styles/variables";
+
+// FixedNav styles begins here
+
+.nav_style {
+  position: fixed;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: $secondary_color;
+  padding: 5px 5px;
+  max-width: 427px;
+  height: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 25px;
+
+    li a {
+      text-decoration: none;
+      color: $primary_color;
+      font-size: 24px;
+      font-weight: 600;
+      padding: 10px 20px;
+      transition: background-color 0.3s, color 0.3s;
+      border-radius: 20px;
+      max-width: 121px;
+    }
+
+    a:hover {
+      background-color: lighten($tertiary_color, 10%);
+    }
+
+    .active {
+      /* Apply styles on hover and when the link is active */
+      background-color: $tertiary_color; /* Change background color on hover/active */
+      color: $secondary_color;
+    }
+  }
+}
+
+// end of FixedNav styles
