@@ -11,34 +11,26 @@ import { author } from "./components/Intro/IntroData";
 import { links } from "./components/Intro/IntroData";
 import { skillList } from "./components/Services/ServicesData";
 import FixedNav from "./components/FixedNav/FixedNav";
+import GeneralLayout from "./layout/GeneralLayout";
 
 function App() {
-  const imagePath = "src/assets/positiveSpace.png";
   const buttonClick = () => {
     console.log("Button Click");
   };
   return (
     <>
       <div className={style.body_style}>
-        <Navigation
-          logo={imagePath}
-          isLoggedIn={true}
-          navList={navigationList}
-        />
-        <Intro
-          openingText={openingText}
-          primary_image={primary_image}
-          onButtonClick={buttonClick}
-          paragraph={paragraph}
-          author={author}
-          links={links}
-        />
-        <Services header="Services" skillList={skillList} />
-        <FixedNav
-          first_option="Gallery"
-          second_option="About"
-          third_option="Reviews"
-        />
+        <GeneralLayout>
+          <Intro
+            openingText={openingText}
+            primary_image={primary_image}
+            onButtonClick={buttonClick}
+            paragraph={paragraph}
+            author={author}
+            links={links}
+          />
+          <Services header="Services" skillList={skillList} />
+        </GeneralLayout>
       </div>
     </>
   );

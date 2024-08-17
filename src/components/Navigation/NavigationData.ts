@@ -1,4 +1,5 @@
-export const navigationList = [
+const imagePath = "src/assets/positiveSpace.png";
+const navigationList = [
   {
     id: 1,
     icon: "src/assets/upload_lite.png",
@@ -20,3 +21,5 @@ export const navigationList = [
     icon: "src/assets/Black_WhiteJiezel.png",
   },
 ];
+
+export { imagePath, navigationList };
