@@ -14,7 +14,7 @@
     padding: 1em 0;
   }
 
-  article {
+  .first_layout {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -33,6 +33,71 @@
       font-size: 24px;
       font-weight: 500;
       padding: 10px 30px;
+    }
+  }
+
+  .second_layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 92px;
+    background-color: $darker_prime;
+    padding: 30px 0;
+
+    .skills_section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      background-color: $secondary_color;
+      padding: 36px 40px;
+
+      div {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 8px;
+
+        h6 {
+          font-size: 20px;
+          font-weight: 500;
+          color: $primary_color;
+        }
+      }
+
+      img {
+        height: 32px;
+        width: 32px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        list-style: none;
+
+        li {
+          font-size: 16px;
+          font-weight: 500;
+          color: $primary_color;
+        }
+      }
+    }
+
+    .images_section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: start;
+      gap: 15px;
+
+      img {
+        min-height: 400px;
+        width: 266px;
+        border-radius: 0 10px 0 10px;
+      }
     }
   }
 }
