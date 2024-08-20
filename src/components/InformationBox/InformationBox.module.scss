@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+
+.info_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  background-color: $secondary_color;
+  padding: 20px 29px;
+  height: 223px;
+  width: 346px;
+
+  header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    img {
+      height: 32px;
+      width: 30px;
+    }
+    h6 {
+      font-size: 20px;
+      font-weight: 500;
+      color: $primary_color;
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    li p {
+      font-size: 14px;
+      font-weight: 500;
+      color: $primary_color;
+    }
+  }
+}
