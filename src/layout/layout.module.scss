@@ -1,0 +1,40 @@
+@import "../styles/variables";
+
+// scss for Biography Layout starts here --
+
+.biography_style {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    text-align: center;
+    font-size: 36px;
+    color: $tertiary_color;
+    margin: auto;
+    padding: 1em 0;
+  }
+
+  article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+    gap: 1em;
+
+    span {
+      color: $accent_color;
+    }
+
+    .greet_paragraph {
+      width: 681px;
+      height: 252px;
+      font-size: 24px;
+      font-weight: 500;
+      padding: 10px 30px;
+    }
+  }
+}
+
+// scss for Biography Layout ends here --
