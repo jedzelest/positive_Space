@@ -18,7 +18,7 @@ const Button = ({ context, onClick, type, disabled, icon }: Props) => {
       className={styles.button_style}
     >
       {context}
-      {icon && <img src={icon} alt="" />}
+      {icon && <img src={icon} alt="Button-icon" />}
     </button>
   );
 };

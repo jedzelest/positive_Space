@@ -30,7 +30,7 @@ const BiographyLayout = () => {
       <article className={styles.second_layout}>
         <section className={styles.skills_section}>
           <div>
-            <img src="src/assets/star.png" alt="" />
+            <img src="/assets/star.png" alt="" />
             <h6>Main Skills</h6>
           </div>
           <ul>
@@ -45,10 +45,10 @@ const BiographyLayout = () => {
         </section>
         <section className={styles.images_section}>
           <div className={styles.image_div}>
-            <img src="src/assets/Estrelloso_1.jpg" alt="Graduation Pic 1" />
+            <img src="/assets/Estrelloso_1.jpg" alt="Graduation Pic 1" />
           </div>
           <div className={styles.image_div}>
-            <img src="src/assets/Estrelloso_2.jpg" alt="Graduation Pic 2" />
+            <img src="/assets/Estrelloso_2.jpg" alt="Graduation Pic 2" />
           </div>
         </section>
       </article>

@@ -18,7 +18,7 @@ const InformationBox = ({
   return (
     <div className={styles.info_box}>
       <header>
-        <img src="src/assets/pencil.png" alt="Test" />
+        <img src="/assets/pencil.png" alt="Test" />
         <h6>Personal Information</h6>
       </header>
       <ul>

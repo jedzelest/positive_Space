@@ -36,7 +36,7 @@ const Intro = ({
         <Button
           context="Download CV"
           onClick={onButtonClick}
-          icon="src/assets/download_CV.png"
+          icon="assets/download_CV.png"
         />
       </div>
       <div className={styles.image_intro}>
