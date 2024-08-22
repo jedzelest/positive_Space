@@ -8,9 +8,9 @@ import { paragraph } from "./components/Intro/IntroData";
 import { author } from "./components/Intro/IntroData";
 import { links } from "./components/Intro/IntroData";
 import { skillList } from "./components/Services/ServicesData";
-import GeneralLayout from "./layout/GeneralLayout";
-import InformationBox from "./components/InformationBox/InformationBox";
-import BiographyLayout from "./layout/BiographyLayout";
+import GeneralLayout from "./layouts/GeneralLayout";
+import BiographyLayout from "./layouts/BiographyLayout";
+import Image from "./components/Image/Image";
 
 function App() {
   const buttonClick = () => {
