@@ -1,4 +1,4 @@
-const primary_image = "src/assets/Jiezel_center.jpg";
+const primary_image = "public/assets/Jiezel_center.jpg";
 const openingText = "He has risen, Baby Girl!";
 const paragraph = `"Illustrations can be a big window: a looking glass into the author's
           imagination."`;
