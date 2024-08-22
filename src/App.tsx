@@ -1,5 +1,4 @@
 import style from "./App.module.scss";
-import Button from "./components/Button/Button";
 import Intro from "./components/Intro/Intro";
 import Services from "./components/Services/Services";
 import { primary_image } from "./components/Intro/IntroData";
@@ -10,7 +9,6 @@ import { links } from "./components/Intro/IntroData";
 import { skillList } from "./components/Services/ServicesData";
 import GeneralLayout from "./layouts/GeneralLayout";
 import BiographyLayout from "./layouts/BiographyLayout";
-import Image from "./components/Image/Image";
 
 function App() {
   const buttonClick = () => {
