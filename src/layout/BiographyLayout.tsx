@@ -44,8 +44,12 @@ const BiographyLayout = () => {
           </ul>
         </section>
         <section className={styles.images_section}>
-          <img src="src/assets/Estrelloso_1.jpg" alt="Graduation Pic 1" />
-          <img src="src/assets/Estrelloso_2.jpg" alt="Graduation Pic 2" />
+          <div className={styles.image_div}>
+            <img src="src/assets/Estrelloso_1.jpg" alt="Graduation Pic 1" />
+          </div>
+          <div className={styles.image_div}>
+            <img src="src/assets/Estrelloso_2.jpg" alt="Graduation Pic 2" />
+          </div>
         </section>
       </article>
     </div>

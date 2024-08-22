@@ -98,6 +98,22 @@
         width: 266px;
         border-radius: 0 10px 0 10px;
       }
+
+      .image_div {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          border-radius: 0 10px 0 10px;
+          background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+          pointer-events: none;
+        }
+      }
     }
   }
 }
