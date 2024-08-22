@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+.info_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+  background-color: #fbfef9;
+  padding: 20px 29px;
+  height: 223px;
+  width: 346px;
+}
+.info_box header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.info_box header img {
+  height: 32px;
+  width: 30px;
+}
+.info_box header h6 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2f2f2f;
+}
+.info_box ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.info_box ul li p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #2f2f2f;
+}/*# sourceMappingURL=InformationBox.module.css.map */

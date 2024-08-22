@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+.intro_header {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 20px 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 245px;
+  margin: 2em 0;
+}
+.intro_header .text_intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 44px;
+}
+.intro_header .text_intro .heading_text {
+  font-size: 40px;
+  font-weight: 700;
+  display: flex;
+  color: #df4e4e;
+  justify-content: center;
+  align-items: center;
+}
+.intro_header .text_intro .heading_text .typing_text {
+  overflow: hidden;
+  border-right: 2px solid;
+  white-space: nowrap;
+  display: inline;
+  animation: typing 4s steps(30, end) 1s infinite, blink-caret 0.75s step-end infinite;
+}
+.intro_header .text_intro .heading_text img {
+  width: 216;
+  height: 49px;
+}
+.intro_header .text_intro p {
+  width: 274px;
+  height: 100px;
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  flex-direction: column;
+  gap: 15px;
+}
+.intro_header .text_intro p span {
+  display: block;
+  color: #df4e4e;
+  font-weight: 500;
+  font-style: italic;
+}
+.intro_header .image_intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 333px;
+}
+.intro_header .image_intro .image_container {
+  position: relative;
+  height: 333px;
+  width: 333px;
+}
+.intro_header .image_intro .image_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  pointer-events: none;
+}
+.intro_header .image_intro .image_container .main_image {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+}
+.intro_header .image_intro ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.intro_header .image_intro ul a img {
+  height: 40px;
+  width: 40px;
+}
+
+@keyframes typing {
+  0% {
+    width: 0; /* Starts with no text visible */
+  }
+  70% {
+    width: 100%; /* Fully types the text by 70% of the animation time */
+  }
+  100% {
+    width: 100%; /* Holds the full text for the remaining 30% */
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fbfef9;
+  }
+}/*# sourceMappingURL=Intro.module.css.map */
