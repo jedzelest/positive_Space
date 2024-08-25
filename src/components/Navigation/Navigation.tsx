@@ -17,7 +17,7 @@ const Navigation = ({ logo, isLoggedIn, navList }: Props) => {
           <a href="#">
             <img src={logo} alt="icon-image" />
           </a>
-          <ul>
+          <ul className={styles.navListItems}>
             {navList?.map((nav) => (
               <div key={nav.id}>
                 <li>
@@ -28,8 +28,24 @@ const Navigation = ({ logo, isLoggedIn, navList }: Props) => {
               </div>
             ))}
           </ul>
+          <img
+            src="/assets/hamburger.png"
+            alt=""
+            className={styles.hamburger_menu_icon}
+          />
         </nav>
       )}
+      <div className={styles.mobile_menu}>
+        <ul>
+          {navList?.map((nav) => (
+            <li key={nav.id}>
+              <a href="">
+                <img src={nav.icon} alt="nav-icon-image" />
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 };
