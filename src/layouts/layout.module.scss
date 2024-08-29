@@ -122,7 +122,7 @@
 
 // scss for SampleWorks Layout starts here --
 
-.sample_works_layout {
+.sample_works_header_layout {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -145,5 +145,13 @@
     span {
       color: $accent_color;
     }
+  }
+
+  h6 {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    padding: 1em;
+    width: 100%;
   }
 }

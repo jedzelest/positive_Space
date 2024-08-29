@@ -9,8 +9,9 @@ import { links } from "./components/Intro/IntroData";
 import { skillList } from "./components/Services/ServicesData";
 import GeneralLayout from "./layouts/GeneralLayout";
 import BiographyLayout from "./layouts/BiographyLayout";
-import Image from "./components/Image/Image";
 import { SampleWorksLayout } from "./layouts/SampleWorksLayout";
+import Image from "./components/Image/Image";
+import { ImageList1 } from "./components/Image/Imagedetails";
 
 function App() {
   const buttonClick = () => {

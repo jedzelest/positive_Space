@@ -4,6 +4,7 @@
 
 .primary_style {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   align-items: center;
@@ -70,6 +71,7 @@
 
 .secondary_style {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;

@@ -10,28 +10,32 @@ interface Props {
   }[];
 }
 
-const Image = ({ variant }: Props) => {
+const Image = ({ variant, details }: Props) => {
   return (
     <>
       {variant === "primary" ? (
         <section className={styles.primary_style}>
-          <div className={styles.primary_div}>
-            <img src="/assets/Jastine_Tattoo.jpg" alt="Artwork-image" />
-            <section>
-              <h6>Chaos</h6>
-              <p>2024</p>
-            </section>
-          </div>
+          {details.map((artwork) => (
+            <div className={styles.primary_div} key={artwork.id}>
+              <img src={artwork.link} alt="Artwork-image" loading="lazy" />
+              <section>
+                <h6>{artwork.title}</h6>
+                <p>{artwork.year}</p>
+              </section>
+            </div>
+          ))}
         </section>
       ) : (
         <section className={styles.secondary_style}>
-          <section className={styles.image_section}>
-            <div>
-              <img src="/assets/Jastine_Tattoo.jpg" alt="Artwork-image" />
-            </div>
-            <h6>Chaos</h6>
-            <p>2024</p>
-          </section>
+          {details.map((artwork) => (
+            <section className={styles.image_section} key={artwork.id}>
+              <div>
+                <img src={artwork.link} alt="Artwork-image" loading="lazy" />
+              </div>
+              <h6>{artwork.title}</h6>
+              <p>{artwork.year}</p>
+            </section>
+          ))}
         </section>
       )}
     </>
