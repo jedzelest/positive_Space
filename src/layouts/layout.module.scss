@@ -119,3 +119,31 @@
 }
 
 // scss for Biography Layout ends here --
+
+// scss for SampleWorks Layout starts here --
+
+.sample_works_layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    text-align: center;
+    font-size: 36px;
+    color: $tertiary_color;
+    margin: auto;
+    padding: 1em 0;
+  }
+
+  p {
+    text-align: start;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 25px 175px;
+
+    span {
+      color: $accent_color;
+    }
+  }
+}

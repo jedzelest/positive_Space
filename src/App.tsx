@@ -9,6 +9,8 @@ import { links } from "./components/Intro/IntroData";
 import { skillList } from "./components/Services/ServicesData";
 import GeneralLayout from "./layouts/GeneralLayout";
 import BiographyLayout from "./layouts/BiographyLayout";
+import Image from "./components/Image/Image";
+import { SampleWorksLayout } from "./layouts/SampleWorksLayout";
 
 function App() {
   const buttonClick = () => {
@@ -28,6 +30,7 @@ function App() {
           />
           <Services header="Services" skillList={skillList} />
           <BiographyLayout />
+          <SampleWorksLayout />
         </GeneralLayout>
       </div>
     </>
