@@ -132,3 +132,27 @@
     border-color: $secondary_color;
   }
 }
+
+// media query
+
+@media screen and (max-width: 768px) {
+  .intro_header {
+    gap: 10px 5px;
+    padding: 0 190px;
+
+    .text_intro {
+      align-items: center;
+      gap: 35px;
+
+      .heading_text {
+        font-size: 30px;
+      }
+    }
+
+    .image_intro {
+      gap: 35px;
+    }
+  }
+}
+
+// end of navigation component styles
