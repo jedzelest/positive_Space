@@ -46,4 +46,37 @@
   }
 }
 
+// MEDIA RESPONSIVENESS
+
+@media screen and (max-width: 576px) {
+  .nav_style {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+      gap: 22px;
+
+      li a {
+        font-size: 22px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .nav_style {
+    height: 50px;
+    ul {
+      gap: 18px;
+
+      li a {
+        font-size: 15px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
 // end of FixedNav styles

@@ -36,12 +36,8 @@
         animation: typing 4s steps(30, end) 1s infinite,
           blink-caret 0.75s step-end infinite;
       }
-
-      img {
-        width: 216;
-        height: 49px;
-      }
     }
+
     p {
       width: 274px;
       height: 100px;
@@ -133,15 +129,33 @@
   }
 }
 
-// media query
+// media query for RESPONSIVENESS
 
+// largest tablet size
+@media screen and (max-width: 992px) {
+  .intro_header {
+    gap: 10px 5px;
+    padding: 0 190px;
+
+    .text_intro {
+      align-items: start;
+      gap: 35px;
+    }
+
+    .image_intro {
+      gap: 35px;
+    }
+  }
+}
+
+// smallest tablet size
 @media screen and (max-width: 768px) {
   .intro_header {
     gap: 10px 5px;
     padding: 0 190px;
 
     .text_intro {
-      align-items: center;
+      align-items: start;
       gap: 35px;
 
       .heading_text {
@@ -151,6 +165,95 @@
 
     .image_intro {
       gap: 35px;
+    }
+  }
+}
+
+// mobile size
+@media screen and (max-width: 576px) {
+  .intro_header {
+    // styles for the text-intro
+    justify-content: center;
+    align-items: center;
+
+    .text_intro {
+      align-items: start;
+      .heading_text {
+        font-size: 28px;
+
+        .typing_text {
+        }
+      }
+
+      p {
+        span {
+        }
+      }
+    }
+
+    // styles for the image-intro
+
+    .image_intro {
+      gap: 30px;
+      width: 260px;
+
+      .image_container {
+        height: 260px;
+        width: 260px;
+      }
+
+      ul {
+        a img {
+          height: 32px;
+          width: 32px;
+        }
+      }
+    }
+  }
+}
+
+// smallest mobile size
+@media screen and (max-width: 375px) {
+  .intro_header {
+    // styles for the text-intro
+
+    justify-content: center;
+    align-items: center;
+
+    .text_intro {
+      align-items: start;
+      padding: 1em 2em;
+      .heading_text {
+        font-size: 25px;
+
+        .typing_text {
+        }
+      }
+
+      p {
+        span {
+        }
+      }
+    }
+
+    // styles for the image-intro
+
+    .image_intro {
+      gap: 30px;
+      width: 260px;
+      padding: 1em 1em;
+
+      .image_container {
+        height: 260px;
+        width: 260px;
+      }
+
+      ul {
+        a img {
+          height: 32px;
+          width: 32px;
+        }
+      }
     }
   }
 }

@@ -8,7 +8,6 @@ import { author } from "./components/Intro/IntroData";
 import { links } from "./components/Intro/IntroData";
 import { skillList } from "./components/Services/ServicesData";
 import GeneralLayout from "./layouts/GeneralLayout";
-import BiographyLayout from "./layouts/BiographyLayout";
 import { SampleWorksLayout } from "./layouts/SampleWorksLayout";
 
 function App() {
@@ -28,7 +27,6 @@ function App() {
             links={links}
           />
           <Services header="Services" skillList={skillList} />
-          <BiographyLayout />
           <SampleWorksLayout />
         </GeneralLayout>
       </div>
