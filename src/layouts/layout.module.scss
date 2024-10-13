@@ -1,125 +1,5 @@
 @import "../styles/variables";
 
-// scss for Biography Layout starts here --
-
-.biography_style {
-  display: flex;
-  flex-direction: column;
-
-  h3 {
-    text-align: center;
-    font-size: 36px;
-    color: $tertiary_color;
-    margin: auto;
-    padding: 1em 0;
-  }
-
-  .first_layout {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 50px 0;
-    gap: 1em;
-
-    span {
-      color: $accent_color;
-    }
-
-    .greet_paragraph {
-      width: 681px;
-      height: 252px;
-      font-size: 24px;
-      font-weight: 500;
-      padding: 10px 30px;
-    }
-  }
-
-  .second_layout {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: start;
-    gap: 92px;
-    background-color: $darker_prime;
-    padding: 30px 0;
-
-    .skills_section {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: 24px;
-      background-color: $secondary_color;
-      padding: 36px 40px;
-
-      div {
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        gap: 8px;
-
-        h6 {
-          font-size: 20px;
-          font-weight: 500;
-          color: $primary_color;
-        }
-      }
-
-      img {
-        height: 32px;
-        width: 32px;
-      }
-
-      ul {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-        list-style: none;
-
-        li {
-          font-size: 16px;
-          font-weight: 500;
-          color: $primary_color;
-        }
-      }
-    }
-
-    .images_section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: start;
-      gap: 15px;
-
-      img {
-        min-height: 400px;
-        width: 266px;
-        border-radius: 0 10px 0 10px;
-      }
-
-      .image_div {
-        position: relative;
-
-        &::before {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
-          border-radius: 0 10px 0 10px;
-          background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-          pointer-events: none;
-        }
-      }
-    }
-  }
-}
-
-// scss for Biography Layout ends here --
-
 // scss for SampleWorks Layout starts here --
 
 .sample_works_header_layout {
@@ -139,8 +19,8 @@
   p {
     text-align: start;
     font-size: 25px;
-    font-weight: 800;
-    padding: 25px 250px;
+    font-weight: 500;
+    padding: 25px 200px;
 
     span {
       color: $accent_color;
@@ -153,5 +33,26 @@
     text-align: center;
     padding: 1em;
     width: 100%;
+  }
+}
+
+// MEDIA RESPONSIVENESS
+
+@media screen and (width: 576px) {
+  .sample_works_header_layout {
+    p {
+      font-weight: 500;
+      padding: 25px 80px;
+    }
+  }
+}
+
+@media screen and (width: 375px) {
+  .sample_works_header_layout {
+    p {
+      font-size: 25px;
+      font-weight: 400;
+      padding: 25px 30px;
+    }
   }
 }

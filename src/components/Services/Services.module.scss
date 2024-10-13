@@ -52,3 +52,13 @@
     }
   }
 }
+
+// MEDIA RESPONSIVENESS
+
+@media screen and (width: 375px) {
+  .services_style {
+    ul {
+      padding: 60px 30px;
+    }
+  }
+}
