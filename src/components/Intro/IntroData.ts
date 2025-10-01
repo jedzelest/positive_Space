@@ -1,7 +1,8 @@
 const primary_image = "/assets/Jiezel_center.jpg";
 const openingText = "your guardian angel";
-const paragraph = `"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Etiam consectetur tortor eu rutrum accumsan."`;
-const author = "Jedzel E";
+const paragraph = `"Seasons are changing and waves are crashing
+And stars are falling all for us."`;
+const author = "The Red Jumpsuit Apparatus";
 
 const links = [
   {
