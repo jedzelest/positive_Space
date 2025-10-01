@@ -44,13 +44,17 @@
       font-weight: 500;
       padding: 25px 80px;
     }
+
+    span {
+      color: red;
+    }
   }
 }
 
 @media screen and (width: 375px) {
   .sample_works_header_layout {
     p {
-      font-size: 25px;
+      font-size: 10px;
       font-weight: 400;
       padding: 25px 30px;
     }
