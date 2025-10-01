@@ -1,8 +1,7 @@
 const primary_image = "/assets/Jiezel_center.jpg";
 const openingText = "your guardian angel";
-const paragraph = `"Illustrations can be a big window: a looking glass into the author's
-          imagination."`;
-const author = "Emma Lesley";
+const paragraph = `"Lorem ipsum dolor sit amet, consectetur adipiscing elit.Etiam consectetur tortor eu rutrum accumsan."`;
+const author = "Jedzel E";
 
 const links = [
   {
